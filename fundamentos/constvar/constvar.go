@@ -12,6 +12,7 @@ import (
 
 func main() {
 	const PI float64 = 3.1415
+
 	var raio = 3.2 // tipo float64 inferido pelo compilador
 
 	// forma reduzida de criar var
