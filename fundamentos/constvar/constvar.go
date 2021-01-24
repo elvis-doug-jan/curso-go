@@ -1,24 +1,17 @@
 package main
 
-// Ao colocar uma letra na frente do nome do pacote, criamos um alias para aquele import
-// Se passar um _ (underline) na frente do import, quer dizer que esse importe não é utilizado e não deve ser removido
-// pelo compilador
-
 import (
-	_ "context"
 	"fmt"
 	m "math"
 )
 
 func main() {
 	const PI float64 = 3.1415
+	var raio = 3.2 // tipo (float64) inferido pelo compilador
 
-	var raio = 3.2 // tipo float64 inferido pelo compilador
-
-	// forma reduzida de criar var
+	// forma reduzida de criar uma var
 	area := PI * m.Pow(raio, 2)
-
-	fmt.Printf("Área: %v \n", area)
+	fmt.Println("A área da circunferência é", area)
 
 	const (
 		a = 1
@@ -33,10 +26,8 @@ func main() {
 	fmt.Println(a, b, c, d)
 
 	var e, f bool = true, false
+	fmt.Println(e, f)
 
-	g, h, i := 2, false, "teste"
-
-	fmt.Printf("Com declaração %v, %v \n", e, f)
-
-	fmt.Printf("Abreviado, %v, %v, %v", g, h, i)
+	g, h, i := 2, false, "epa!"
+	fmt.Println(g, h, i)
 }
