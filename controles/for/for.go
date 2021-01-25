@@ -26,8 +26,7 @@ func main() {
 		}
 	}
 
-	for {
-		// laço infinito
+	for { // laço infinito
 		fmt.Println("Para sempre...")
 		time.Sleep(time.Second)
 	}
