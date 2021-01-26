@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-// Function for format clock with zero numbers if time is minor than 10 value
+// ClockRunnerFormated for format clock with zero numbers if time is minor than 10 value
 func ClockRunnerFormated() {
 	hour := strconv.Itoa(time.Now().Hour())
 	minute := strconv.Itoa(time.Now().Minute())
